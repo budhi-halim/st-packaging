@@ -1,0 +1,17 @@
+<svg viewBox="0 0 1000 200" preserveAspectRatio="none">
+  <path
+    id="sine"
+    pathLength="1000"
+    fill="none"
+  />
+
+  <text
+    textLength="1000"
+    lengthAdjust="spacingAndGlyphs"
+    text-anchor="middle"
+  >
+    <textPath href="#sine" startOffset="50%">
+      THIS TEXT ALWAYS FITS ONE FULL SINE
+    </textPath>
+  </text>
+</svg>

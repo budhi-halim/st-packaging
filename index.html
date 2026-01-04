@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="packaging.css">
     <script type="module" src="app.js"></script>
+    <script type="module" src="curve-text.js"></script>
   </head>
   <body>
     <main class="scene" id="scene-area">
@@ -33,7 +34,17 @@
               <div class="brand-area">
                 <h1 class="product-title">Tempe<br>Chips</h1>
               </div>
-              <div class="tagline">
+              <div class="tagline-curve">
+                <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
+                  <path id="sine" pathLength="1000" fill="none"/>
+                  <text textLength="1000" lengthAdjust="spacingAndGlyphs" text-anchor="middle">
+                    <textPath href="#sine" startOffset="50%">
+                      Pilihan cerdas pecinta superfood
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div class="tagline" hidden>
                 Pilihan cerdas pecinta superfood
               </div>
               <div class="variant-ribbon">
