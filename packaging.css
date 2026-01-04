@@ -233,7 +233,7 @@ img, svg {
 /* Ribbon */
 .variant-ribbon {
   position: absolute;
-  top: 60cqh;
+  top: 59cqh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -243,7 +243,8 @@ img, svg {
 .ribbon-content {
   background-color: oklch(from var(--pkg-bg) clamp(0, l * 0.95, 1) clamp(0, c * 0.5, 0.4) h);
   padding: 1cqh 6cqw;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); */
+  border-radius: 100vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
