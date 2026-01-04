@@ -171,7 +171,7 @@ img, svg {
   left: 0;
   width: 100%;
   height: 100cqh;
-  opacity: 0.9;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -185,7 +185,7 @@ img, svg {
 /* Typography */
 .brand-area {
   position: absolute;
-  top: 25cqh;
+  top: 18cqh;
   width: 100%;
   text-align: center;
   z-index: 10;
@@ -194,17 +194,27 @@ img, svg {
 .product-title {
   font-family: 'Romman', 'Shrikhand', cursive;
   color: rgb(202, 202, 231);
-  color: oklch(from var(--pkg-bg) calc(l + 0.5) calc(c - 0.1) h);
-  font-size: 12cqh;
-  line-height: 0.85;
+  color: oklch(from var(--pkg-bg) clamp(0.9, l * 1.3, 1) clamp(0, c * 0.2, 0.4) h);
+  font-size: 14cqh;
+  line-height: 0.9;
   margin: 0;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+  position: absolute;
+  width: 100%;
+  top: 48%;
+  text-align: center;
+  /* color: oklch(from var(--pkg-bg) 1 clamp(0, c * 0.2, 0.4) h); */
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* Ribbon */
 .variant-ribbon {
   position: absolute;
-  top: 52cqh;
+  top: 57cqh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -212,7 +222,7 @@ img, svg {
 }
 
 .ribbon-content {
-  background-color: oklch(from var(--pkg-bg) calc(l - 0) calc(c - 0.1) h);
+  background-color: oklch(from var(--pkg-bg) clamp(0, l * 0.95, 1) clamp(0, c * 0.5, 0.4) h);
   padding: 1cqh 6cqw;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -271,12 +281,12 @@ img, svg {
   width: 100%;
   height: 100%;
   padding-left: 2cqw;
-  padding-top: 90cqh;
+  padding-top: 88cqh;
   z-index: 100;
 }
 
 .halal-icon {
-  width: 12%;
+  width: 15%;
 }
 
 /* Footer */

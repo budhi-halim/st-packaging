@@ -33,35 +33,35 @@ if (shouldEnableSmoothing()) {
 /* --- 4. APP LOGIC --- */
 const variants = {
   original: {
-    bg: 'oklch(55% 0.16 233)',
+    bg: 'oklch(72% 0.14 210)', 
     accent: 'oklch(20% 0.21 28.5)',
     silhouette: 'oklch(56% 0.14 233)',
     text: 'ORIGINAL',
     pirt: '2053518010553-27'
   },
   barbecue: {
-    bg: 'oklch(55% 0.05 55)',
+    bg: 'oklch(55% 0.09 60)', 
     accent: 'oklch(20% 0.21 42)',
     silhouette: 'oklch(33% 0.04 55)',
     text: 'BARBECUE',
     pirt: '2053518010554-28'
   },
   cheese: {
-    bg: 'oklch(55% 0.18 85)',
+    bg: 'oklch(88% 0.17 95)', 
     accent: 'oklch(20% 0.22 50)',
     silhouette: 'oklch(74% 0.18 80)',
     text: 'CHEESE',
     pirt: '2053518010555-29'
   },
   lime: {
-    bg: 'oklch(55% 0.17 127)',
+    bg: 'oklch(72% 0.16 134)', 
     accent: 'oklch(20% 0.17 142)',
     silhouette: 'oklch(64% 0.17 131)',
-    text: 'LIME',
+    text: 'DAUN JERUK',
     pirt: '2053518010556-30'
   },
   balado: {
-    bg: 'oklch(55% 0.21 28)',
+    bg: 'oklch(59% 0.20 28)', 
     accent: 'oklch(20% 0.19 96)',
     silhouette: 'oklch(46% 0.21 28)',
     text: 'BALADO',
