@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="packaging.css">
     <script type="module" src="app.js"></script>
-    <script type="module" src="curve-text.js"></script>
+    <!-- <script type="module" src="curve-text.js"></script> -->
+    <script type="module" src="render_on_resize.js"></script>
   </head>
   <body>
     <main class="scene" id="scene-area">
@@ -23,7 +24,8 @@
                 <img src="chips.png" class="chips-img">
               </div>
               <div class="logo-container">
-                <div class="logo-img metallic-asset" style="--asset-url: url('st_logo.png')"></div>
+                <!-- <div class="logo-img metallic-asset" style="--asset-url: url('st_logo.png')"></div> -->
+                 <img src="st_logo_no_bg.png" class="logo-img">
               </div>
               <div class="halal-container"><img src="halal.png" class="halal-icon"></div>
               <div class="silhouette-container">
@@ -32,9 +34,9 @@
                 </svg>
               </div>
               <div class="brand-area">
-                <h1 class="product-title">Tempe<br>Chips</h1>
+                <h1 class="product-title metallic">Tempe<br>Chips</h1>
               </div>
-              <div class="tagline-curve">
+              <!-- <div class="tagline-curve">
                 <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
                   <path id="sine" pathLength="1000" fill="none"/>
                   <text textLength="1000" lengthAdjust="spacingAndGlyphs" text-anchor="middle">
@@ -43,13 +45,13 @@
                     </textPath>
                   </text>
                 </svg>
-              </div>
+              </div> -->
               <div class="tagline" hidden>
                 Pilihan cerdas pecinta superfood
               </div>
               <div class="variant-ribbon">
                 <div class="ribbon-content">
-                  <span id="variant-text">ORIGINAL</span>
+                  <span id="variant-text" class="metallic">ORIGINAL</span>
                 </div>
               </div>
               <div class="pirt">
