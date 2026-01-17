@@ -182,6 +182,13 @@ img, svg {
   -webkit-mask-image: var(--opacity-gradient);
 }
 
+.mountain {
+  /* border: 3px solid red; */
+  width: 100%;
+  opacity: 0.8;
+  /* transform: translate(-50%, -50%); */
+}
+
 /* Typography */
 .brand-area {
   /* border: 2px solid red; */
